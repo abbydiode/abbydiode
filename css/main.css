@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Coda');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --primary-main: #0099FF;
+	--primary-highlight: #66C1FF;
+	--dark-main: #1A1A1A;
+	--dark-highlight: #2A2A2A;
+	--black-translucent: #00000080;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background-color: var(--dark-main);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
+
+.padded {
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+img {
+	width: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #323232;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--primary-main);
+	border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--primary-highlight);
+}
+
+#button-top {
+	background-color: var(--primary-main);
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	padding: 0.5rem;
+	filter: drop-shadow(0 4px 8px var(--black-translucent));
+	height: 1rem;
+	width: 6rem;
+	z-index: 999;
+	border-radius: 16px;
+	transition: background-color 0.15s ease-in-out;
+}
+
+#button-top:hover {
+	background-color: var(--primary-highlight);
+}
+
+#button-top h4 {
+	font-family: 'Coda', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: white;
+	margin: 0;
+	text-align: center;
+	text-shadow: 2px 2px 16px var(--black-translucent);
+}
+
+nav {
+	position: relative;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #1A1A1A80;
+	border-bottom: 2px solid #FFFFFF;
+	display: flex;
+	padding-top: 4px;
+	box-shadow: 0 2px 16px var(--black-translucent);
+}
+
+nav a {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 150;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 16px var(--black-translucent);
+	flex: 1;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 12px;
+	margin: 0px 1rem 0px 1rem;
+	border-bottom: 2px solid #FFFFFF00;
+	transition: border-bottom-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+	border-radius: 6px 6px 0 0;
+}
+
+nav a:hover {
+	border-bottom-color: #FFFFFFFF;
+	background-color: #323232;
+}
+
+nav > p {
+	font-family: 'Coda', sans-serif;
+	font-weight: 250;
+	font-size: 2rem;
+	text-align: center;
+	color: #FFFFFF;
+	flex: 2;
+	margin: 0;
+}
+
+footer {
+	height: 1.25rem;
+	background-color: var(--dark-main);
+	padding: 8px 25% 0px 25%;
+	box-shadow: 0 -2px 16px var(--black-translucent);
+	padding: 4px 5% 4px 5%;
+}
+
+footer p {
+	font-family: 'Coda', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+footer a {
+	display: inline;
+	text-decoration: underline;
+}
+
+/* Profile Card Related */
+#profile {
+	/*background-image: linear-gradient(180deg, #4cb7ff, #006bb2);*/
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+#profile-card {
+	margin: 0 10% 0 10%;
+	height: 8rem;
+	background-color: var(--black-translucent);
+	box-shadow: 2px 2px 16px var(--black-translucent);
+	border-radius: 4px;
+	position: relative;
+}
+
+#profile-card h2 {
+	font-family: 'Coda', sans-serif;
+	font-weight: 600;
+	font-size: 3rem;
+	color: #FFFFFF;
+	position: relative;
+	top: 0;
+	left: 4rem;
+	margin: 0;
+	text-shadow: 2px 2px 8px var(--black-translucent);
+	width: 50%;
+}
+
+#profile-card h3 {
+	font-family: 'Coda', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+	width: 50%;
+	position: relative;
+	top: -0.5rem;
+	left: 8px;
+	margin: 0;
+	text-shadow: 2px 2px 8px var(--black-translucent);
+}
+
+#profile-card > img {
+	height: 3rem;
+	width: auto;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	object-fit: scale-down;
+	box-shadow: 2px 2px 16px var(--black-translucent);
+	border-radius: 4px;
+}
+
+#profile-card-soc {
+	width: 50%;
+	height: 2rem;
+	position: absolute;
+	left: 8px;
+	bottom: 0;
+	display: flex;
+}
+
+#profile-card-soc a {
+	flex: 1;
+	transition: transform 0.2s ease-in-out;
+	height: 1.5rem;
+	width: 1.5rem;
+	padding-right: 5%;
+	filter: drop-shadow(2px 2px 8px var(--black-translucent))
+}
+
+#profile-card-soc a:hover {
+	transform: scale(1.2);
+}
+
+#profile-card-soc a img {
+	height: 100%;
+}
+
+.hdiv {
+	width: 100%;
+	height: 1px;
+	background-color: #444;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+/* Project Card Related */
+#projects {
+	background-color: var(--dark-highlight);
+	padding-top: 4rem;
+	padding-bottom: 8rem;
+	box-shadow: 0 -2px 16px var(--black-translucent);
+}
+
+
+#projects h1 {
+	font-family: 'Coda', sans-serif;
+	font-size: 3rem;
+	font-weight: 500;
+	color: #FFF;
+	margin: 0;
+	text-shadow: 4px 4px 16px var(--black-translucent);
+}
+
+.project-card {
+	height: 12rem;
+	box-shadow: 2px 2px 16px var(--black-translucent);
+	overflow: hidden;
+	border-radius: 4px;
+	position: relative;
+	background-color: #000000;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.project-card h2 {
+	font-family: 'Coda', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+	color: white;
+	position: absolute;
+	margin: 0.5rem 0 0 1rem;
+	text-shadow: 2px 2px 8px var(--black-translucent);
+	top: 0px;
+	left: 0px;
+}
+
+.project-card p {
+	width: 50%;
+	max-width: 22rem;
+	font-family: 'Coda', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 100;
+	color: #fff;
+	position: absolute;
+	margin: 0.5rem 0 0 1rem;
+	text-shadow: 2px 2px 8px var(--black-translucent);
+	top: 3.5rem;
+	left: 0;
+}
+
+.project-card img:first-child {
+	height: 100%;
+	transform: scale(1.1);
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+	opacity: 0.7;
+	filter: blur(4px);
+}
+
+.project-card:hover img:first-child {
+	transform: scale(1);
+	opacity: 0.9;
+	filter: blur(0px);
+}
+
+.project-card-lang {
+	height: 2.5rem;
+	width: 2.5rem;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	filter: drop-shadow(2px 2px 8px var(--black-translucent));
+}
+
+@media screen and (orientation:portrait) {
+	.padded {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	nav a {
+		font-size: 1rem;
+	}
+
+	nav > p {
+		display: none;
+	}
+
+	#profile-card {
+		height: 6rem;
+	}
+	
+	#profile-card h2 {
+		font-size: 2rem;
+		left: 3rem;
+	}
+	
+	#profile-card h3 {
+		font-size: 1.25rem;
+	}
+
+	#profile-card > img
+	{
+		height: 2rem;
+	}
+
+	#profile-card-soc
+	{
+		width: 75%;
+	}
+
+	#projects h1 {
+		font-size: 2.5rem;
+	}
+
+	.project-card {
+		height: 8rem;
+	}
+
+	.project-card h2 {
+		font-size: 2rem;
+	}
+
+	.project-card p {
+		font-size: 1rem;
+		top: 2.5rem;
+		width: 75%;
+	}
+
+	footer p {
+		font-size: 0.75rem;
+	}
+
+	#button-top {
+		position: fixed;
+		left: 50%;
+		margin-left: -3rem;
+		padding: 0.5rem;
+	}
+}
