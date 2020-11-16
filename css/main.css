@@ -193,7 +193,6 @@ footer a {
 	top: 8px;
 	left: 8px;
 	object-fit: scale-down;
-	box-shadow: 2px 2px 16px var(--black-translucent);
 	border-radius: 4px;
 }
 

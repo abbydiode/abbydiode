@@ -14,7 +14,7 @@
 			<section id="profile-card">
 				<h2>Galaxy</h2>
 				<h3>Abigail de Joode</h3>
-				<img src="i/a/avatar.gif" alt="My avatar lol">
+				<img src="i/a/avatar.png" alt="My avatar lol">
 				<div id="profile-card-soc">
 					<a href="https://primenodes.com/t/">
 						<img src="i/a/ico/soc/elhs.svg" alt="Encrypted Laser Icon">

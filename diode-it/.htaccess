@@ -1,0 +1,13 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ "https://%{HTTP_HOST}%{REQUEST_URI}" [R=301,L]
+
+# If requested host is not diode-it.com then redirect them to diode-it.com
+RewriteCond %{HTTP_HOST} !^(w{3}\.)?diode-it\.com$ [NC]
+RewriteRule ^(.*)$ "https://diode-it.com$1" [R=301,L]
+
+
+
