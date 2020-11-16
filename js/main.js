@@ -1,13 +1,12 @@
-$(function(){
-    if ($(document).scrollTop() < 100)
-    { $("#button-top").fadeOut(0); }
-    $(document).scroll(function() {
-        if ($(this).scrollTop() >= 100)
-        {
+$(() => {
+    if ($(document).scrollTop() < 100) {
+        $("#button-top").fadeOut(0)
+    }
+
+    $(document).scroll(() => {
+        if ($(this).scrollTop() >= 100) {
             $("#button-top").fadeIn(250);
-        }
-        else
-        {
+        } else {
             $("#button-top").fadeOut(250);
         }
     })

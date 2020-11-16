@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+	<!-- Taking inspiration is fine, stealing is not. -->
 	<head>
 		<title>Galaxy - Project Portfolio</title>
 		<?php include_once("inc/header.php"); ?>
 	</head>
-	<body> <!-- Taking inspiration is fine, stealing is not. -->
+	<body>
 		<?php include_once("inc/navigation.php"); ?>
 		<header>
 			<!-- Something here -->
@@ -12,7 +13,7 @@
 		<section id="profile" class="padded">
 			<section id="profile-card">
 				<h2>Galaxy</h2>
-				<h3>Thomas de Joode</h3>
+				<h3>Abigail de Joode</h3>
 				<img src="i/a/avatar.gif" alt="My avatar lol">
 				<div id="profile-card-soc">
 					<a href="https://primenodes.com/t/">
@@ -65,7 +66,5 @@
 		</section>
 		<?php include_once("inc/topbutton.php"); ?>
 		<?php include_once("inc/footer.php"); ?>
-		<script src="js/libs/jquery-3.3.1.min.js"></script>
-		<script src="js/main.js"></script>
 	</body>
 </html>
