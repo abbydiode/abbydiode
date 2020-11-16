@@ -16,20 +16,11 @@
 				<h3>Abigail de Joode</h3>
 				<img src="i/a/avatar.png" alt="My avatar lol">
 				<div id="profile-card-soc">
-					<a href="https://primenodes.com/t/">
-						<img src="i/a/ico/soc/elhs.svg" alt="Encrypted Laser Icon">
-					</a>
-					<a href="https://forum.facepunch.com/u/cykf/Galaxy/" target="_blank" rel="noreferrer">
-						<img src="i/a/ico/soc/facepunch.svg" alt="Facepunch Icon">
-					</a>
 					<a href="https://github.com/Galaxyzd" target="_blank" rel="noreferrer">
 						<img src="i/a/ico/soc/github.svg" alt="Github Icon">
 					</a>
 					<a href="https://www.linkedin.com/in/twdejoode/" target="_blank" rel="noreferrer">
 						<img src="i/a/ico/soc/linkedin.svg" alt="LinkedIn Icon">
-					</a>
-					<a href="https://www.paypal.me/galaxybeatzz" target="_blank" rel="noreferrer">
-						<img src="i/a/ico/soc/paypal.svg" alt="PayPal Icon">
 					</a>
 					<a href="http://steamcommunity.com/profiles/76561198082763237" target="_blank" rel="noreferrer">
 						<img src="i/a/ico/soc/steam.svg" alt="Steam Icon">
