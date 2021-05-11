@@ -5,10 +5,10 @@
         $projectName = preg_replace("/\|/", "", $projectName);
         echo
             '<a href="projects/'.$projectLink.'.php" class="project-card">
-                <img src="i/a/pro/'.$projectLink.'-banner.png" alt="'.$projectName.' screenshot">
+                <img src="i/projects/'.$projectLink.'-banner.png" alt="'.$projectName.' screenshot">
                 <h2>'.$projectName.'</h2>
                 <p>'.$projectDescription.'</p>
-                <img src="i/a/ico/'.$projectLanguage.'.svg" alt="'.$projectLanguage.' Logo" class="project-card-lang">
+                <img src="i/icons/'.$projectLanguage.'.svg" alt="'.$projectLanguage.' Logo" class="project-card-lang">
             </a>';
     }
 ?>

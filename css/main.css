@@ -197,7 +197,6 @@ footer a {
 }
 
 #profile-card-soc {
-	width: 30%;
 	height: 2rem;
 	position: absolute;
 	left: 8px;
@@ -205,7 +204,7 @@ footer a {
 	display: flex;
 }
 
-#profile-card-soc a {
+#profile-card-soc > * {
 	flex: 1;
 	transition: transform 0.2s ease-in-out;
 	height: 1.5rem;
@@ -214,12 +213,8 @@ footer a {
 	filter: drop-shadow(2px 2px 8px var(--black-translucent))
 }
 
-#profile-card-soc a:hover {
+#profile-card-soc > *:hover {
 	transform: scale(1.2);
-}
-
-#profile-card-soc a img {
-	height: 100%;
 }
 
 .hdiv {
@@ -307,71 +302,4 @@ footer a {
 	top: 0.5rem;
 	right: 0.5rem;
 	filter: drop-shadow(2px 2px 8px var(--black-translucent));
-}
-
-@media screen and (orientation:portrait) {
-	.padded {
-		padding-left: 15%;
-		padding-right: 15%;
-	}
-
-	nav a {
-		font-size: 1rem;
-	}
-
-	nav > p {
-		display: none;
-	}
-
-	#profile-card {
-		height: 6rem;
-	}
-	
-	#profile-card h2 {
-		font-size: 2rem;
-		left: 3rem;
-	}
-	
-	#profile-card h3 {
-		font-size: 1.25rem;
-	}
-
-	#profile-card > img
-	{
-		height: 2rem;
-	}
-
-	#profile-card-soc
-	{
-		width: 75%;
-	}
-
-	#projects h1 {
-		font-size: 2.5rem;
-	}
-
-	.project-card {
-		height: 8rem;
-	}
-
-	.project-card h2 {
-		font-size: 2rem;
-	}
-
-	.project-card p {
-		font-size: 1rem;
-		top: 2.5rem;
-		width: 75%;
-	}
-
-	footer p {
-		font-size: 0.75rem;
-	}
-
-	#button-top {
-		position: fixed;
-		left: 50%;
-		margin-left: -3rem;
-		padding: 0.5rem;
-	}
 }

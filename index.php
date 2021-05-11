@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Taking inspiration is fine, stealing is not. -->
 	<head>
-		<title>Galaxy - Project Portfolio</title>
-		<?php include_once("inc/header.php"); ?>
+		<title>Abby's Webpage</title>
+		<?php include_once("includes/header.php"); ?>
 	</head>
 	<body>
-		<?php include_once("inc/navigation.php"); ?>
+		<?php // include_once("includes/navigation.php"); ?>
 		<header>
 			<!-- Something here -->
 		</header>
 		<section id="profile" class="padded">
 			<section id="profile-card">
-				<h2>Galaxy</h2>
-				<h3>Abigail de Joode</h3>
-				<img src="i/a/avatar.png" alt="My avatar lol">
+				<h2>Abby</h2>
+				<h3>Connie is the cutest ❤️</h3>
+				<img src="i/avatar.png" alt="Avatar">
 				<div id="profile-card-soc">
-					<a href="https://github.com/Galaxyzd" target="_blank" rel="noreferrer">
-						<img src="i/a/ico/soc/github.svg" alt="Github Icon">
-					</a>
-					<a href="https://www.linkedin.com/in/twdejoode/" target="_blank" rel="noreferrer">
-						<img src="i/a/ico/soc/linkedin.svg" alt="LinkedIn Icon">
-					</a>
-					<a href="http://steamcommunity.com/profiles/76561198082763237" target="_blank" rel="noreferrer">
-						<img src="i/a/ico/soc/steam.svg" alt="Steam Icon">
-					</a>
-					<a href="https://twitter.com/galaxyzd" target="_blank" rel="noreferrer">
-						<img src="i/a/ico/soc/twitter.svg" alt="Twitter Icon">
-					</a>
-					<a href="https://www.youtube.com/c/Galaxyzd" target="_blank" rel="noreferrer">
-						<img src="i/a/ico/soc/youtube.svg" alt="YouTube Icon">
+					<a href="https://linktr.ee/abbydiode" target="_blank">
+						<img src="i/icons/linktree.svg" alt="Linktree">
 					</a>
 				</div>
 			</section>
 		</section>
 		<section id="projects" class="padded">
-			<?php include_once("inc/project-card.php"); ?>
+			<?php include_once("includes/project-card.php"); ?>
 			<h1>Projects I'm working on</h1>
 			<?php generateProjectCard(
 				"catbox",
 				"A cat styled Discord minigame bot.",
-				"nodejs")
-			?>
-			<?php generateProjectCard(
-				"cosmOS| Framework",
-				"An open-source NodeJS based Discord bot that allows for easy creation of commands using JSON and pre-written functionality.",
 				"nodejs")
 			?>
 			<div class="hdiv"></div>
@@ -55,7 +37,7 @@
 				"csharp")
 			?>
 		</section>
-		<?php include_once("inc/topbutton.php"); ?>
-		<?php include_once("inc/footer.php"); ?>
+		<?php include_once("includes/topbutton.php"); ?>
+		<?php include_once("includes/footer.php"); ?>
 	</body>
 </html>
