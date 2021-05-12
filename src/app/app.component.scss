@@ -128,14 +128,13 @@ footer a {
 
 #profile-card {
 	margin: 0 10% 0 10%;
-	height: 8rem;
 	background-color: $black-translucent;
 	box-shadow: 2px 2px 16px $black-translucent;
 	border-radius: 4px;
 	position: relative;
 }
 
-#profile-card h2 {
+#profile-card h1 {
 	font-family: 'Coda', sans-serif;
 	font-weight: 600;
 	font-size: 3rem;
@@ -148,19 +147,6 @@ footer a {
 	width: 50%;
 }
 
-#profile-card h3 {
-	font-family: 'Coda', sans-serif;
-	font-weight: 500;
-	font-size: 1.5rem;
-	color: #FFFFFF;
-	width: 50%;
-	position: relative;
-	top: -0.5rem;
-	left: 8px;
-	margin: 0;
-	text-shadow: 2px 2px 8px $black-translucent;
-}
-
 #profile-card > img {
 	height: 3rem;
 	width: auto;
@@ -169,35 +155,6 @@ footer a {
 	left: 8px;
 	object-fit: scale-down;
 	border-radius: 4px;
-}
-
-#profile-card-soc {
-	height: 2rem;
-	position: absolute;
-	left: 8px;
-	bottom: 0;
-	display: flex;
-}
-
-#profile-card-soc > * {
-	flex: 1;
-	transition: transform 0.2s ease-in-out;
-	height: 1.5rem;
-	width: 1.5rem;
-	padding-right: 5%;
-	filter: drop-shadow(2px 2px 8px $black-translucent)
-}
-
-#profile-card-soc > *:hover {
-	transform: scale(1.2);
-}
-
-.hdiv {
-	width: 100%;
-	height: 1px;
-	background-color: #444;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
 }
 
 /* Project Card Related */
