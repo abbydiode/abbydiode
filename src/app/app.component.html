@@ -1,37 +1,36 @@
-<!-- 
-  <nav>
-    <p>Abby's Homepage</p>
-    <a href="index.php">Home</a>
-    <a href="index.php#top">About Me</a>
-    <a href="index.php#projects">Projects</a>
-  </nav> 
--->
-<section id="profile" class="padded">
-  <section id="profile-card">
-    <h1>Abby</h1>
-    <img src="assets/img/avatar.png" alt="Avatar">
-  </section>
+<section class="container px-5 my-4 d-flex flex-column align-items-center">
+  <div class="card text-center rounded-3" id="profile-card">
+    <img src="assets/img/avatar.png" alt="Avatar" class="card-img-top w-25 mx-auto">
+    <div class="card-body">
+      <h1 class="card-title">Abigail de Joode</h1>
+      <p class="card-text">She/Her</p>
+    </div>
+  </div>
 </section>
-<section id="projects" class="padded">
+<section id="projects" class="d-flex flex-column align-items-center container-fluid px-5">
   <h1>Projects</h1>
-  <a href="https://github.com/abbydiode/catbox" class="project-card">
-    <img src="assets/img/projects/catbox-banner.png" alt="catbox screenshot">
-    <h2>catbox</h2>
-    <p>A cat themed Discord minigame bot</p>
-    <img src="assets/img/icons/nodejs.svg" alt="nodejs Logo" class="project-card-lang">
-  </a>
-  <a href="https://github.com/abbydiode/prince-of-persia" class="project-card">
-    <img src="assets/img/projects/princeofpersia-banner.png" alt="Prince of Persia 18 screenshot">
-    <h2>Prince of Persia 18</h2>
-    <p>A highschool project where I stole the concept from an old game and then made it 3D</p>
-    <img src="assets/img/icons/csharp.svg" alt="csharp Logo" class="project-card-lang">
-  </a>
+  <div class="card mb-4 rounded-3 project-card overflow-hidden">
+    <img src="assets/img/projects/catbox-banner.png" alt="catbox screenshot" class="card-img">
+    <div class="card-img-overlay">
+      <h2 class="card-title">catbox</h2>
+      <p class="card-text">A cat themed Discord minigame bot</p>
+      <a href="https://github.com/abbydiode/catbox" class="btn btn-primary">GitHub</a>
+    </div>
+  </div>
+  <div class="card mb-4 rounded-3 project-card overflow-hidden">
+    <img src="assets/img/projects/princeofpersia-banner.png" alt="catbox screenshot" class="card-img">
+    <div class="card-img-overlay">
+      <h2 class="card-title">Prince of Persia</h2>
+      <p class="card-text">Simple remastered version of Prince of Persia 1989 made in Unity3D</p>
+      <a href="https://github.com/abbydiode/prince-of-persia" class="btn btn-primary">GitHub</a>
+    </div>
+  </div>
 </section>
-<a href="#top" id="button-top" style="display: none">
-  <h4>Back To Top</h4>
+<!-- To be implemented
+<a href="#top" class="btn btn-primary position-fixed rounded-pill" id="button-top">
+  <mat-icon>arrow_upward</mat-icon>
 </a>
-<footer>
-  <p>Maybe I'll finish this website one day</p>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="assets/js/index.js"></script>
+-->
+<footer class="d-flex border-top mt-4 py-4 justify-content-center">
+  <p>This webpage was made with ❤️ by me, using Angular, and Bootstrap</p>
 </footer>

@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Coda');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-$primary-main: #0099FF;
-$primary-highlight: #66C1FF;
-$dark-main: #1A1A1A;
-$dark-highlight: #2A2A2A;
+$bs-dark: var(--bs-dark);
+$bs-gray-dark: var(--bs-gray-dark);
 $black-translucent: #00000080;
 
+#profile-card {
+	background-color: $bs-gray-dark;
+}
+
+#button-top {
+	bottom: 0;
+	right: 0;
+}
+
+.project-card {
+	width: 75%;
+	height: 12rem;
+}
+
+/*
 #profile {
 	background: linear-gradient($primary-main, $dark-highlight);
 }
@@ -119,9 +129,8 @@ footer a {
 	text-decoration: underline;
 }
 
-/* Profile Card Related */
+
 #profile {
-	/*background-image: linear-gradient(180deg, #4cb7ff, #006bb2);*/
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 }
@@ -157,7 +166,6 @@ footer a {
 	border-radius: 4px;
 }
 
-/* Project Card Related */
 #projects {
 	background-color: $dark-highlight;
 	padding-top: 4rem;
@@ -228,3 +236,4 @@ footer a {
 	right: 0.5rem;
 	filter: drop-shadow(2px 2px 8px $black-translucent);
 }
+*/
