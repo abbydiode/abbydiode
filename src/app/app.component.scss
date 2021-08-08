@@ -5,28 +5,27 @@ $bs-gray-dark: var(--bs-gray-dark);
 
 #profile-card {
 	background-color: $bs-gray-dark;
-	transition: 0.1s
 }
 
 #profile-card:hover {
 	transform: scale(1.01);
 }
 
-#button-top {
-	bottom: 0;
-	right: 0;
-}
-
 .project-card {
-	transition: 0.1s;
 	width: 50%;
-	height: 12rem;
 }
 
 .project-card .card-img {
+	height: 12rem;
 	filter: blur(2px);
+	object-fit: cover;
 }
 
 .project-card:hover {
 	transform: scale(1.01);
+}
+
+#button-top {
+	bottom: 0;
+	right: 0;
 }
