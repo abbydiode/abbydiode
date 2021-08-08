@@ -13,10 +13,7 @@ $bs-gray-dark: var(--bs-gray-dark);
 
 .project-card {
 	width: 50%;
-
-	@media (orientation: portrait) {
-		width: 75%;
-	}
+	@media (orientation: portrait) { width: 75%; }
 }
 
 .project-card .card-img {
