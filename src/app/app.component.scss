@@ -5,6 +5,11 @@ $bs-gray-dark: var(--bs-gray-dark);
 
 #profile-card {
 	background-color: $bs-gray-dark;
+	transition: 0.1s
+}
+
+#profile-card:hover {
+	transform: scale(1.01);
 }
 
 #button-top {
