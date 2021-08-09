@@ -5,10 +5,10 @@ $bs-gray-dark: var(--bs-gray-dark);
 
 #profile-card {
 	background-color: $bs-gray-dark;
-}
 
-#profile-card:hover {
-	transform: scale(1.01);
+	&:hover {
+		transform: scale(1.01);
+	}
 }
 
 .project-card {
@@ -16,14 +16,29 @@ $bs-gray-dark: var(--bs-gray-dark);
 	@media (orientation: portrait) { width: 75%; }
 }
 
-.project-card .card-img {
-	height: 12rem;
-	filter: blur(2px);
-	object-fit: cover;
+.project-card {
+	&:hover {
+		transform: scale(1.01);
+
+		.card-img {
+			filter: blur(0px);
+		}
+	}
+
+	.card-img {
+		height: 12rem;
+		filter: blur(4px);
+		object-fit: cover;
+	}
 }
 
-.project-card:hover {
-	transform: scale(1.01);
+.img-blurred {
+	overflow: hidden;
+	border-radius: 0.2rem;
+
+	.card-img {
+		transform: scale(1.1);
+	}
 }
 
 #button-top {
