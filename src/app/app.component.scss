@@ -19,15 +19,12 @@ $bs-gray-dark: var(--bs-gray-dark);
 .project-card {
 	&:hover {
 		transform: scale(1.01);
-
-		.card-img {
-			filter: blur(0px);
-		}
 	}
 
 	.card-img {
+		
 		height: 12rem;
-		filter: blur(4px);
+		filter: blur(2px);
 		object-fit: cover;
 	}
 }
