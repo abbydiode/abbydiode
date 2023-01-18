@@ -1,54 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-html, body {
-    height: 100%;
-}
-
 body {
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: var(--bs-dark);
 }
 
-* {
-    transition: 0.1s;
+a[target="_blank"]::after {
+    font-family: "Material Icons";
+    content: "open_in_new";
 }
 
 #profile-card {
     background-color: var(--bs-gray-dark);
-}
-
-.project-card {
-    width: 50%;
-}
-
-@media (orientation: portrait) {
-    .project-card {
-        width: 75%;
-    }
-}
-
-.project-card:hover {
-    transform: scale(1.01);
-}
-
-.project-card .card-img {
-    height: 12rem;
-    filter: blur(2px);
-    object-fit: cover;
-}
-
-.img-blurred {
-    overflow: hidden;
-    border-radius: 0.2rem;
-}
-
-.img-blurred .card-img {
-    transform: scale(1.1);
-}
-
-#button-top {
-    bottom: 0;
-    right: 0;
 }
